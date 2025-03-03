@@ -1,0 +1,159 @@
+/* Global Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+    background-color: #111f2d;
+    color: #f4f4f4;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #4c6a92 #2c3e50;
+}
+
+/* Smooth Scrolling */
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4c6a92;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2c3e50;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #4C6A92, #3a4d65);
+    color: #f4f4f4;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3b4a66, #2d3b56);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #2d3b56;
+    transform: scale(0.98);
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+/* Loading & Message Styling */
+#loading, #message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+#loading {
+    font-size: 18px;
+    color: #b5b5b5;
+}
+
+/* Table Container (Scrollable) */
+.table-container {
+    width: 100%;
+    max-height: 400px; 
+    overflow-x: auto; 
+    overflow-y: auto; 
+    margin-top: 15px;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    min-width: 360px;
+    border-collapse: collapse;
+    background-color: #1c2c3a;
+    border-radius: 8px;
+    table-layout: auto;
+}
+
+/* Table Header & Cell Styling */
+th, td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #3a4d65;
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #2b3a47;
+}
+
+tr:nth-child(odd) {
+    background-color: #1c2c3a;
+}
+
+tr:hover {
+    background-color: #3b4a66;
+    cursor: pointer;
+}
+
+/* Table Hover Effects */
+table th, table td {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+table th:hover, table td:hover {
+    background-color: #4c6a92;
+    color: #f4f4f4;
+}
+
+/* Scrollable Table Custom Scrollbar */
+.table-container::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #4c6a92;
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #3b4a66;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #2c3e50;
+}
+
+/* Enhanced Loading & Message */
+#loading, #message {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table-outer {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+}
